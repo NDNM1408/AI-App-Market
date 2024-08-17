@@ -1,0 +1,40 @@
+[
+  {
+    "id": "0",
+    "input": "TEXT",
+    "output": "AUDIO",
+    "type": null,
+    "name": "Text To Audio",
+    "description": "Transform your text into audio",
+    "url": "http://localhost:8000/tts",
+    "steps": [
+      {
+        "input": "TEXT",
+        "output": "AUDIO",
+        "type": "model",
+        "name": "VietTTS",
+        "description": "",
+        "url": "http://localhost:8000/tts"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "input": "FILE",
+    "output": "TEXT",
+    "type": null,
+    "name": "PDF To Text",
+    "description": "Extract Text from PDF",
+    "url": "http://localhost:8000/pdf2text",
+    "steps": [
+      {
+        "input": "FILE",
+        "output": "TEXT",
+        "type": "model",
+        "name": "Py2PDF",
+        "description": "",
+        "url": "http://localhost:8000/pdf2text"
+      }
+    ]
+  }
+]
